@@ -1,7 +1,7 @@
 import streamlit as st
 import joblib
 
-model = load('Sentiment-Analysis.joblib')
+model = joblib.load('Sentiment-Analysis.joblib')
 
 st.title('Sentiment Analysis')
 text = st.text_input('Enter the message')
